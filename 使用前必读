@@ -1,0 +1,43 @@
+命令行 commend line
+
+##建成一个VITE的页面，所有包都会自动创建再这个frontend的文件夹里
+npx create-vite@latest frontend --templete react
+
+##进入这个文件夹
+cd frontend
+
+##执行npm的安装
+npm install
+
+##启动develop这个命令
+npm run dev
+****************************************************************
+cd backend
+##初始化了一个package.json 方便装包
+npm init
+
+##安装包或者是叫做addon
+
+npm install express
+
+# 开始监听这个webserver
+进入server.js
+
+const express = require('express')
+
+//create a web server
+const app = express();
+
+const port = 8000;
+
+//127.0.0.1 = local host
+app.listen(8000, () => {
+  console.log('server is running on https://localhost:8000')
+})
+
+#commend line
+lsof -i tcp:8000
+
+#gitHub 
+1.New repostory
+git remote add origin https://github.com/doplz/INS-CLONE.git
